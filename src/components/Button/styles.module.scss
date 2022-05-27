@@ -1,0 +1,19 @@
+@use 'styles' as *;
+
+.button {
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid $blue_ribbon;
+  box-shadow: rgba(black, 0.5) 0px 10px 10px -10px;
+  color: $torea_bay;
+  cursor: pointer;
+  font-family: $family-nunito;
+  font-size: $font-s;
+  padding: $space-s $space-l;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: none;
+    transition: all 0.5s linear;
+  }
+}

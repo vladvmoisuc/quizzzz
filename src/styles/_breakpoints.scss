@@ -1,0 +1,45 @@
+// Stolen from another project of mine
+@use 'sass:map';
+
+$mobile: 600;
+$tablet: 900;
+$laptop: 1200;
+$desktop: 1536;
+
+// Used for styling specific breakpoints
+@mixin up-to($device) {
+  @media screen and (max-width: "#{$device}px") {
+    @content;
+  }
+}
+
+@mixin between($min-device, $max-device) {
+  @media screen and (min-width: "#{$min-device}px") and( max-width: "#{$max-device}px") {
+    @content;
+  }
+}
+
+@mixin over($device) {
+  @media screen and (min-width: "#{$device}px") {
+    @content;
+  }
+}
+
+// Used for hiding content on specific breakpoints
+@mixin hide-up-to($device) {
+  @include up-to($device) {
+    display: none;
+  }
+}
+
+@mixin hide-between($min-device, $max-device) {
+  @include hide-between($min-device, $max-device) {
+    display: none;
+  }
+}
+
+@mixin hide-over($device) {
+  @include over($device) {
+    display: none;
+  }
+}

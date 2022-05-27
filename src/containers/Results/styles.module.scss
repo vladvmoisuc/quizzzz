@@ -1,0 +1,23 @@
+@use 'styles' as *;
+
+.list {
+  height: 100%;
+}
+
+.li {
+  box-shadow: rgba(black, 0.1) 0px 6px 12px -2px, rgba(black, 0.1) 0px 3px 7px -3px;
+  font-family: $family-nunito;
+  list-style-type: none;
+  padding: $space-xs $space-s;
+  margin-bottom: $space-s;
+  text-align: left;
+}
+
+.correct {
+  border: 1px solid $torch_red;
+}
+
+.wrong {
+
+  border: 1px solid $la_palma;
+}

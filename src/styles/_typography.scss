@@ -1,0 +1,34 @@
+// Sizes
+$font-xs: 12px;
+$font-s: 16px;
+$font-m: 20px;
+$font-l: 24px;
+$font-xl: 28px;
+$font-xxl: 32px;
+
+$font-h1: 36px;
+
+// Font-Families
+$family-nunito: 'Nunito', sans-serif;
+
+// We could style directly the Html elements, but on the long term
+// that's not a great thing, as a lot of times we need to have
+// correct semantic elements in the page, but we need to style
+// them in some say that won't match the defaults.
+// We can therefore have something like <h1 className="heading-3">, 
+// that will look and fit the page correctly, even though it will be
+// a little weird. 
+.heading-1 {
+  font-family: $family-nunito;
+  font-size: $font-h1;
+}
+
+.paragraph {
+  font-family: $family-nunito;
+  font-size: $font-m;
+}
+
+.span {
+  font-family: $family-nunito;
+  font-size: $font-s;
+}

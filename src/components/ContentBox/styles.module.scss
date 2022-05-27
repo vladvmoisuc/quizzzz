@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+.contentBox {
+  width: 80%;
+}
+
+.content {
+  padding: 40px;
+  border: 1px solid $torea_bay;
+  margin-bottom: $space-m;
+}
+
+.buttons {
+  > :first-child {
+    margin-right: $space-m;
+  }
+}
